@@ -87,7 +87,7 @@ body {
   padding-right: 1rem;
 }
 
-.about-me-button {
+.blog-link {
   padding-right: 3rem;
 }
 
@@ -350,7 +350,6 @@ body {
 .about {
   display: grid;
   height: 100vh;
-  /* grid-template-rows: 40vh 40vh; */
   padding-top: 7vh;
   font-size: 1.3rem;
   background-color: var(--dk-background);
@@ -367,7 +366,6 @@ body {
 .about-overview {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  /* grid-template-rows: 10vh 40vh; */
   justify-items: center;
   align-items: start;
   padding-left: 5vw;
@@ -398,10 +396,12 @@ body {
   display: grid;
   align-items: center;
   justify-items: center;
-  height: 10vh;
+  height: auto;
   grid-row-start: 2;
   grid-row-end: 3;
   padding-bottom: 1vh;
+  padding-top: 1vh;
+  row-gap: 10px;
 }
 
 .footer p {
@@ -418,7 +418,7 @@ body {
 }
 
 /* Tablet Sized Screens */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 992px) {
   .big {
     font-size: 3rem;
     text-shadow: 6px 6px 0px rgba(255, 255, 255, 0.2);
@@ -435,6 +435,7 @@ body {
   .port-item {
     width: calc(50vw - 2rem);
     height: calc(30vh - 2rem);
+    font-size: 1rem;
   }
 
   .port-item-slide {
@@ -461,7 +462,7 @@ body {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .home {
     grid-template-columns: 1fr;
     height: 100vh;
@@ -484,17 +485,24 @@ body {
 
   .portfolio {
     grid-template-columns: 1fr;
-    padding: 1rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .port-header {
+    font-size: 2rem;
+    padding-top: none;
+    text-shadow: none;
   }
 
   .port-item {
-    width: calc(90vw - 2rem);
-    height: calc(35vh - 2rem);
+    width: calc(95vw - 1rem);
+    height: calc(35vh - 1rem);
   }
 
   .port-item-slide {
-    width: calc(90vw - 2rem);
-    height: calc(35vh - 2rem);
+    width: calc(95vw - 1rem);
+    height: calc(35vh - 1rem);
   }
 
   .port-img {
@@ -503,11 +511,19 @@ body {
     z-index: 3;
   }
 
+  .close-pop {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    padding: 1px;
+  }
+
   .pop-up-content {
     grid-template-columns: 1fr;
     background-color: #dfdedf;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23694873' fill-opacity='0.13' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    border: none;
+    border: 1px solid --dk-background;
+    margin: 0;
+    padding: 5px;
   }
 
   .pop-header {
@@ -526,7 +542,10 @@ body {
   }
 
   .about {
+    height: auto;
     font-size: 0.9rem;
+    background-image: none;
+    row-gap: 10px;
   }
 
   .about-header {
@@ -541,5 +560,26 @@ body {
 
   .about-skills {
     grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 10px;
+  }
+
+  .header {
+    grid-template-columns: 1fr;
+  }
+
+  .header-email {
+    display: none;
+  }
+
+  .footer {
+    padding-top: .5vh;
+    padding-bottom: .5vh;
+    font-size: .8rem;
+    row-gap: 5px;
+  }
+  
+  .footer p {
+    text-align: center;
+    padding: 0 5px;
   }
 }
