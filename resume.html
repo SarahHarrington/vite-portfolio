@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Satisfy&display=swap" rel="stylesheet">
+  <title>Sarah Harrington Resume</title>
+</head>
+
+<body class="grid justify-center m-0 p-0 bg-black-russian-950">
+  <button
+    onClick=window.print() 
+    class="bg-white justify-self-end"
+    aria-label="Printer Version">
+    Printer Version
+    <i class="ph-fill ph-house"></i>
+  </button>
+  <div class="bg-[#FFFFFF] text-black-russian-950 grid grid-cols-[7fr_3fr] h-[10.25in] w-[7.75in]">
+    <header class="col-span-full grid place-items-end bg-hexagons-light border-b-2 border-black-russian-950 h-[3.3rem] leading-[5rem]">
+      <h1 id="name-header" class="text-4xl text-shadow-underline font-satisfy mr-2">Sarah Harrington</h1>
+    </header>
+    <div class="border-r-2 border-black-russian-950 px-4 py-0">
+      <!-- <h2 class="header">Experience</h2> -->
+      <div class="job-section">
+        <div class="job-header">
+          <h3 class="medium-header company-name">Upsie</h3>
+          <p class="job-title">Senior Full Stack Software Engineer</p>
+          <p class="dates"> May 2022 - Sep 2023</p>
+        </div>
+        <ul class="accomplishments">
+          <li>Used TypesScript with Ember front end applications and Node monolith API</li>
+          <li>Wrote acceptance, integration, and unit tests for Ember using QUnit and Jest for Node API</li>
+          <li>Designed and implemented new UIs for internal and e-commerce applications utilizing Adobe XD for mock-ups to simplify user experience</li>
+          <li>Developed a user friendly promo code lookup tool for internal customer service team to improve efficiency resolving customer inquiries</li>
+          <li>Integrated payment method storage for subscriptions Stripe and existing payment processing allowing customers to self service</li>
+          <li>Implemented customized Strapi add on to automate the creation of SEO friendly robots.txt file</li>
+          <li>Successfully migrated Wordpress content to Strapi, established architecture for blog posts & trained content team on its usage</li>
+          <li>Created an Ember add-on that facilitated the use of common components across both all applications ensuring UI consistency</li>
+        </ul>
+        <p><strong>Tech Stack: </strong>TypeScript, Ember, Node, PostgreSQL, Jest, Qunit, Stripe</p>
+      </div>
+
+      <div class="job-section">
+        <div class="job-header">
+          <h3 class="medium-header company-name">GovDocs</h3>
+          <p class="job-title">Full Stack Software Engineer II</p>
+          <p class="dates"> May 2021 - May 2022</p>
+        </div>
+        <ul class="accomplishments">
+          <li>Created & updated AWS Lambda (Node.js) functions for microservice event driven back end architecture including making updates to API Gateway & CloudFront</li>
+          <li>Completed front end feature requests and debugging using React for customer and internal facing applications</li>
+          <li>TDD using Jest for front and back end testing</li>
+          <li>Became SME on integration scripts between Netsuite and back end architecture, created documentation and process workflows</li>
+          <li>Streamlined CI/CD workflows in CircleCI by integrating orbs, variables, and caching to reduce build times</li>
+          <li>Other AWS services used: SQS, SNS, SES, S3, CloudWatch, IAM, Cognito, API Gateway, CloudFront</li>
+        </ul>
+        <p><strong>Tech Stack: </strong>React, AWS, MongoDB, CircleCI, Agile, Jest</p>
+      </div>
+
+      <div class="job-section">
+        <div class="job-header">
+          <h3 class="medium-header company-name">3M</h3>
+          <p class="job-title">Marketing Automation Developer <span class="job-detail-small">(Contract to Hire)</span></p>
+          <p class="dates"> July 2020 - May 2021</p>
+        </div>
+        <ul class="accomplishments">
+          <li>Created HTML parsing solution for Eloqua & 3M.com compatibility using Vue</li>
+        </ul>
+        <div class="job-header">
+          <p class="job-title">Developer & Scrum Master <span class="job-detail-small">(Contract)</span></p>
+          <p class="dates">Dec 2018 - Dec 2019</p>
+        </div>
+        <ul class="accomplishments">
+          <li>Acted as team scrum master running agile processes</li>
+          <li>Created & debugged custom JS & jQuery solutions for Eloqua & 3M.com</li>
+          <li>Created scripts to pull reportable data from Eloqua REST API</li>
+        </ul>
+      </div>
+
+      <div class="job-section">
+        <div class="job-header">
+          <h3 class="medium-header company-name">Iora Health</h3>
+          <p class="job-title">Software Engineer</p>
+          <p class="dates"> Dec 2019 - Jun 2020</p>
+        </div>
+        <ul class="accomplishments">
+          <li>Completed small & medium feature requests using TDD</li>
+        </ul>
+        <p><strong>Tech Stack: </strong>Ember, Ruby on Rails, PostgreSQL, Agile, Mocha, Rspec</p>
+      </div>
+      
+      <!-- <div class="job-section">
+        <div class="job-header">
+          <h3 class="medium-header company-name">Andrew Residence</h3>
+          <p class="job-title">Freelance</p>
+          <p class="dates">Jan 2018 - Dec 2022</p>
+        </div>
+        <ul class="accomplishments">
+          <li>Provided ongoing support for project from bootcamp final project</li>
+        </ul>
+      </div> -->
+    </div> <!-- End Resume Left -->
+    <section class="py-0 px-4">
+      <div>
+        <h2 class="">About Me</h2>
+        <p class="headline">Career changer with over 10 years in HR and a plethora of customer service 
+          experience I love bringing to my roles in software engineering.
+        </p>
+      </div>
+      <div class="contact-info">
+        <h2 class="">Contact Me</h2>
+        <p class="contact-details"><i class="ph ph-map-pin" aria-hidden="true"></i> Minneapolis, MN</p>
+        <p class="contact-details" id="email"><i class="ph ph-envelope-simple" aria-hidden="true"></i> Sarah@SarahDoes.tech</p>
+        <p class="contact-details" id="phone-number"><i class="ph ph-phone" aria-hidden="true"></i> 612.387.7727</p>          
+        <a class="contact-links" id="github" href="https://github.com/SarahHarrington" target="_blank" rel="noreferrer">
+          <i class="ph ph-github-logo" aria-hidden="true"></i> SarahHarrington
+        </a>
+      </div>
+        <div class="skills-section">
+          <h2 class="" id="skills-header">Professional Skills</h2>
+          <p class="skills">TypeScript</p>
+          <p class="skills">JavaScript</p>
+          <p class="skills">React</p>
+          <p class="skills">Ember</p>
+          <p class="skills">Node</p>
+          <p class="skills">AWS <span class="tiny-and">(Lambda, CloudFront, CloudWatch, API Gateway, S3, SNS, SQS, SES, IAM, Cognito)</span></p>
+          <p class="skills">HTML <span class="tiny-and"> & </span>CSS</p>
+          <p class="skills">PostgreSQL</p>
+          <p class="skills">MongoDB</p>
+          <p class="skills">Stripe <span class="tiny-and">(Payment Platform)</span></p>
+          <p class="skills">Strapi <span class="tiny-and">(Headless CMS)</span></p>
+          <p class="skills">Ruby on Rails</p>
+          <p class="skills">Agile</p>
+          <p class="skills">TDD (Mocha, Jest, Rspec)</p>
+          <h2 class="">Skills for Fun</h2>
+          <p class="skills">Adobe Illustrator</p>
+          <p class="skills">Vue</p>
+        </div>
+        <div>
+          <div>
+            <h2 class="">Education</h2>
+            <h3 class="small-header">Prime Digital Academy</h3>
+            <div class="edu-details">
+              <p class="tiny-and">Full Stack Software Engineering</p>
+            </div>
+            <h3 class="small-header">Metropolitan State University</h3>
+            <div class="edu-details">
+              <p class="tiny-and">Business Administration</p>
+            </div>
+          </div>
+        </div>
+    </section>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
