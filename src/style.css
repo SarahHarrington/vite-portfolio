@@ -584,3 +584,13 @@ body {
     padding: 0 5px;
   }
 }
+
+@media print {
+  @page {
+    margin: .25in;
+  }
+
+  html {
+    background: #FFF;
+  }
+}
